@@ -4,7 +4,7 @@ const nunjucks = require("nunjucks");
 const app = express();
 const port = process.env.PORT || 7000;
 // const API_URL = "http://localhost:4567";
-const API_URL = "https://cs280-younote-api.herokuapp.com";
+const API_URL = "https://younote-app-f20.herokuapp.com/";
 
 nunjucks.configure("views", {
   express: app,
