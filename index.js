@@ -3,7 +3,7 @@ const express = require("express");
 const nunjucks = require("nunjucks");
 const app = express();
 const port = process.env.PORT || 7000;
-// const API_URL = "http://localhost:4567";
+//const API_URL = "http://localhost:4567";
 const API_URL = "https://younote-app-f20.herokuapp.com/";
 
 nunjucks.configure("views", {
@@ -33,7 +33,8 @@ app.get("/dashboard", async (req, res) => {
   res.render("dashboard.njk", data);
 });
 
-
+/*
 app.listen(port, () => {
   console.log(`YouNote App running at http://localhost:${port}/`);
 });
+*/
